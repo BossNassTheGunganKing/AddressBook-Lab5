@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title> All My Addy Books</title>
+  <meta charset="UTF-8">
+
+</head>
+<body>
+<a href="/buddyInfoes">Back to All my Buddies</a>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Buddy ID</th>
+    <th scope="col">Buddy Name</th>
+    <th scope="col">Buddy Number</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td th:text="${buddy.id}"></td>
+    <td th:text="${buddy.name}"></td>
+    <td th:text="${buddy.phoneNumber}"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

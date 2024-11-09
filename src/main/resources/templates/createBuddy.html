@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title> All My Addy Books</title>
+  <meta charset="UTF-8">
+
+</head>
+<body>
+
+<a href="/buddyInfoes">Back to all Buddies</a>
+<h1>Buddy Form Submission</h1>
+<form action="#" th:action="@{/createBuddy}" th:object="${newBuddy}" method="post">
+  <p>Name: <input type="text" th:field="*{name}" /></p>
+  <p>Number: <input type="text" th:field="*{phoneNumber}" /></p>
+  <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
+</body>
+</html>

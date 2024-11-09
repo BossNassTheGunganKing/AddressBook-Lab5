@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title> All My Addy Books</title>
+  <meta charset="UTF-8">
+
+</head>
+<body>
+<a href="/buddyInfoes">Buddies</a>
+
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">AddressBook ID</th>
+    <th scope="col">Buddies</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="aBook : ${addressBooks}">
+    <td th:text="${aBook.id}"><a th:href="@{/addressBook/${aBook.id}}">a</a>3</td>
+    <td th:text="${aBook.getBuddies()}"></td>
+  </tr>
+  </tbody>
+</table>
+
+<form action="#" th:action="@{/createAddressBook}" th:object="${newAddressBook}" method="post">
+  <p><input type="submit" value="Add new AddressBook" /></p>
+</form>
+
+</body>
+</html>
