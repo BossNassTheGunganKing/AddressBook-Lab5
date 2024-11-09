@@ -20,7 +20,7 @@ public class AccessingDataJpaApplication {
     public CommandLineRunner demo(AddressBookRepo addressBookRepo) {
         return (args) -> {
             // save a few Buddies
-            BuddyInfo buddyInfo1 = new BuddyInfo("Jack", "4167777777");
+            BuddyInfo buddyInfo1 = new BuddyInfo("Jacky", "4167777777");
             BuddyInfo buddyInfo2 = new BuddyInfo("Jill", "4168888888");
             BuddyInfo buddyInfo3 = new BuddyInfo("Hill", "4169999999");
 
