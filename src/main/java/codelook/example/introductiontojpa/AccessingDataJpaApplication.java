@@ -20,8 +20,8 @@ public class AccessingDataJpaApplication {
         SpringApplication.run(AccessingDataJpaApplication.class, args);
     }
 
-    @Bean
-    public CommandLineRunner demo(BuddyInfoRepo repository, AddressBookRepo addressBookRepo) {
+//    @Bean
+//    public CommandLineRunner demo(BuddyInfoRepo repository, AddressBookRepo addressBookRepo) {
 //        return (args) -> {
 //            // save a few Buddies
 //            BuddyInfo buddyInfo1 = new BuddyInfo("Jack", "4167777777");
@@ -72,7 +72,7 @@ public class AccessingDataJpaApplication {
 ////                log.info(addressBook.toString());
 ////            });
 ////            log.info("");
-        };
-    }
+//        };
+//    }
 
 }
