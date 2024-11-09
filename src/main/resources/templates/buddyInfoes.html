@@ -1,28 +1,27 @@
-<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <title> All My Addy Books</title>
-  <meta charset="UTF-8">
+  <meta charset='UTF-8'>
 
 </head>
 <body>
-<a href="/addressBooks">Back to all Buddies</a>
-<table class="table">
-  <thead class="thead-dark">
+<a href='/addressBooks'>Back to all Buddies</a>
+<table class='table'>
+  <thead class='thead-dark'>
   <tr>
-    <th scope="col">Buddy Id</th>
-    <th scope="col">Buddy Name</th>
-    <th scope="col">Buddy Number</th>
+    <th scope='col'>Buddy Id</th>
+    <th scope='col'>Buddy Name</th>
+    <th scope='col'>Buddy Number</th>
   </tr>
   </thead>
   <tbody>
-  <tr th:each="buddy : ${buddies}">
-    <td th:text="${buddy.id}"></td>
-    <td th:text="${buddy.name}"></td>
-    <td th:text="${buddy.phoneNumber}"></td>
+  <tr th:each='buddy : ${buddies}'>
+    <td th:text='${buddy.id}'></td>
+    <td th:text='${buddy.name}'></td>
+    <td th:text='${buddy.phoneNumber}'></td>
   </tr>
   </tbody>
 </table>
-<a href="/createBuddy">Create New Buddy</a>
+<a href='/createBuddy'>Create New Buddy</a>
 </body>
 </html>
